@@ -265,5 +265,3 @@ print(list(map(len, a)))
 a = ["это", "маленький", "текст", "обидно"]
 
 print(list(map(str.upper, a)))
-
-# %%
