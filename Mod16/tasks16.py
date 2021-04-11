@@ -31,6 +31,7 @@ class Payment():
 
 
 # %%
+# 16.9.4
 class Volunteer():
     def __init__(self, name:str, post:str="Волонтер"):
         self.name = name
