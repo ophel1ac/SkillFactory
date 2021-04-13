@@ -1,6 +1,6 @@
 # %%
 # 16.9.1
-class Rectangle():
+class Rectangle:
     def __init__(self, a, b, width, height):
         self.a = a
         self.b = b
@@ -15,7 +15,7 @@ print(r)
 
 # %%
 #16.9.3
-class Payment():
+class Payment:
     def __init__(self, name:str, balance:int=0):
         self.name = name
         self.balance = balance
@@ -32,7 +32,7 @@ class Payment():
 
 # %%
 # 16.9.4
-class Volunteer():
+class Volunteer:
     def __init__(self, name:str, post:str="Волонтер"):
         self.name = name
         self.post = post
@@ -65,3 +65,16 @@ r2.go_to_event()
 r3.go_to_event()
 
 print(Event.participants)
+
+
+# %%
+# 16.10.5 Exceptions
+class NonPositiveDigitException(ValueError):
+    pass
+
+class Square:
+    def __init__(self, a):
+        if a <= 0:
+            raise NonPositiveDigitException("Введенная сторона меньше или равна нулю")
+        else:
+            self.a = a
