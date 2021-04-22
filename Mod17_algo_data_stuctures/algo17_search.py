@@ -27,7 +27,7 @@ element = int(input())
 
 print(count(array, element))
 # %%
-# Бинарный поиск
+# Бинарный поиск рекурсивный
 
 
 def binary_search(array, element, left, right):
